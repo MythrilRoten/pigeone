@@ -1,0 +1,132 @@
+{
+    "default_server_config": {
+        "m.homeserver": {
+            "base_url": "https://matrix-client.matrix.org",
+            "default_server_name": "Custom server"
+        },
+        "m.identity_server": {
+            "base_url": "https://vector.im"
+        }
+    },
+    "disable_custom_urls": true,
+    "disable_guests": false,
+    "disable_login_language_selector": false,
+    "disable_3pid_login": false,
+    "brand": "Pigeone",
+    "integrations_ui_url": "https://scalar.vector.im/",
+    "integrations_rest_url": "https://scalar.vector.im/api",
+    "integrations_widgets_urls": [
+        "https://scalar.vector.im/_matrix/integrations/v1",
+        "https://scalar.vector.im/api",
+        "https://scalar-staging.vector.im/_matrix/integrations/v1",
+        "https://scalar-staging.vector.im/api",
+        "https://scalar-staging.riot.im/scalar/api"
+    ],
+    "bug_report_endpoint_url": "https://element.io/bugreports/submit",
+    "uisi_autorageshake_app": "element-auto-uisi",
+    "default_country_code": "RU",
+    "show_labs_settings": false,
+    "features": {
+
+        "feature_element_call_video_rooms": false,
+        "feature_group_calls": false,
+        "feature_location_share_live": false,
+        "feature_latex_maths": false,
+        "feature_report_to_moderators": false,
+        "feature_video_rooms": false,
+        "feature_qr_signin_reciprocate_show": false,
+        "feature_favourite_messages": false,
+        "feature_jump_to_date": false,
+        "feature_roomlist_preview_reactions_all": false
+
+    },
+    "default_federate": true,
+    "default_theme": "custom-Electric Blue",
+    "room_directory": {
+        "servers": ["matrix.org"]
+    },
+    "enable_presence_by_hs_url": {
+        "https://matrix.org": false,
+        "https://matrix-client.matrix.org": false
+    },
+    
+    "setting_defaults": {
+         
+        "MessageComposerInput.suggestEmoji": false,
+        "MessageComposerInput.showStickersButton": false,
+        "MessageComposerInput.showPollsButton": false,
+        "MessageComposerInput.insertTrailingColon": false,
+        "UIFeature.urlPreviews": false,
+        "UIFeature.feedback": false,
+        "UIFeature.voip": false,
+        "UIFeature.widgets": false,
+        "UIFeature.advancedSettings": false,
+        "UIFeature.shareQrCode": false,
+        "UIFeature.shareSocial": false,
+        "UIFeature.identityServer": false,
+        "UIFeature.thirdPartyId": false,
+        "UIFeature.registration": false,
+        "UIFeature.passwordReset": false,
+        "UIFeature.deactivate": false,
+        "UIFeature.advancedEncryption": false,
+        "UIFeature.roomHistorySettings": false,
+        "UIFeature.TimelineEnableRelativeDates": false,
+        "UIFeature.BulkUnverifiedSessionsReminder": false,
+        "UIFeature.locationSharing": false,
+
+        "custom_themes": [
+            {
+                "name": "Electric Blue",
+                "is_dark": false,
+                "fonts": {
+                    "faces": [
+                        {
+                            "font-family": "Inter",
+                            "src": [{"url": "/fonts/Inter.ttf", "format": "ttf"}]
+                        }
+                    ],
+                    "general": "Inter, sans",
+                    "monospace": "'Courier New'"
+                },
+                "colors": {
+                    "accent-color": "#3596fc",
+                    "primary-color": "#368bd6",
+                    "warning-color": "#ff4b55",
+                    "sidebar-color": "#27303a",
+                    "roomlist-background-color": "#f3f8fd",
+                    "roomlist-text-color": "#2e2f32",
+                    "roomlist-text-secondary-color": "#61708b",
+                    "roomlist-highlights-color": "#ffffff",
+                    "roomlist-separator-color": "#e3e8f0",
+                    "timeline-background-color": "#ffffff",
+                    "timeline-text-color": "#2e2f32",
+                    "timeline-text-secondary-color": "#61708b",
+                    "timeline-highlights-color": "#f3f8fd",
+                    "username-colors": ["#ff0000"], 
+                    "avatar-background-colors": ["#cc0000"]
+                }
+            }
+        ],
+        "breadcrumbs": true
+    },
+    "branding": {
+        "welcomeBackgroundUrl": "custom/mountain.jpg",
+        "authHeaderLogoUrl": "custom/pigeon-200.svg",
+        "auth_footer_links": [
+            { "text": "FAQ", "url": "https://example.org/faq" },
+            { "text": "Donate", "url": "https://example.org/donate" }
+        ]
+    },
+
+    "remove_key": {
+        "jitsi": {
+            "preferred_domain": "meet.element.io"
+        },
+        "element_call": {
+            "url": "https://call.element.io",
+            "participant_limit": 8,
+            "brand": "Element Call"
+        },
+        "map_style_url": "https://api.maptiler.com/maps/streets/style.json?key=fU3vlMsMn4Jb6dnEIFsx"
+    }
+}
