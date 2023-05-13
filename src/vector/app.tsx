@@ -195,6 +195,14 @@ async function verifyServerConfig(): Promise<IConfigOptions> {
             }
         }
 
+        if (process.env.homeserver) { 
+          wkConfig = {
+            "m.homeserver": {
+              base_url: process.env.HOMESERVER
+            },
+          };
+        }
+
         let discoveryResult: ClientConfig | undefined;
         if (wkConfig) {
             logger.log("Config uses a default_server_config - validating object");
