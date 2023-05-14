@@ -2,13 +2,13 @@
     "default_server_config": {
         "m.homeserver": {
             "base_url": "https://matrix-client.matrix.org",
-            "default_server_name": "Custom server"
+            "default_server_name": "matrix.org"
         },
         "m.identity_server": {
             "base_url": "https://vector.im"
         }
     },
-    "disable_custom_urls": true,
+    "disable_custom_urls": false,
     "disable_guests": false,
     "disable_login_language_selector": false,
     "disable_3pid_login": false,
@@ -110,8 +110,8 @@
         "breadcrumbs": true
     },
     "branding": {
-        "welcomeBackgroundUrl": "custom/mountain.jpg",
-        "authHeaderLogoUrl": "custom/pigeon-200.svg",
+        "welcomeBackgroundUrl": "./custom/mountain.jpg",
+        "authHeaderLogoUrl": "./custom/pigeon-200.svg",
         "auth_footer_links": [
             { "text": "FAQ", "url": "https://example.org/faq" },
             { "text": "Donate", "url": "https://example.org/donate" }

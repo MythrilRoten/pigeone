@@ -11,6 +11,7 @@ const HtmlWebpackInjectPreload = require("@principalstudio/html-webpack-inject-p
 const SentryCliPlugin = require("@sentry/webpack-plugin");
 const crypto = require("crypto");
 
+
 // XXX: mangle Crypto::createHash to replace md4 with sha256, output.hashFunction is insufficient as multiple bits
 // of webpack hardcode md4. The proper fix it to upgrade to webpack 5.
 const createHash = crypto.createHash;
@@ -669,6 +670,24 @@ module.exports = (env, argv) => {
                     },
                 }),
             new webpack.EnvironmentPlugin(["VERSION"]),
+
+            // Test
+            // new webpack.EnvironmentPlugin({'HOMESERVER': 'https://localhost:8008'})
+
+            // new CopyPlugin({
+            //     patterns: [{
+            //         from: path.resolve(__dirname, '/src/custom/favicon.ico'),
+            //         to: path.resolve(__dirname, 'webapp/vector-icons/favicon.ico')
+            //     }],
+            // }),
+
+
+            // new CopyPlugin({
+            //     patterns: [{
+            //         from: path.resolve(__dirname, 'custom')
+            //     }],
+            // }),
+
         ].filter(Boolean),
 
         output: {
@@ -690,7 +709,7 @@ module.exports = (env, argv) => {
         devServer: {
             // serve unwebpacked assets from webapp.
             contentBase: ["./webapp"],
-
+            
             // Only output errors, warnings, or new compilations.
             // This hides the massive list of modules.
             stats: "minimal",

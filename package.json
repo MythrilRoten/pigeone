@@ -120,6 +120,7 @@
         "babel-loader": "^8.2.2",
         "chokidar": "^3.5.1",
         "concurrently": "^8.0.0",
+        "copy-webpack-plugin": "6.4.1",
         "cpx": "^1.5.0",
         "css-loader": "^4",
         "dotenv": "^16.0.2",

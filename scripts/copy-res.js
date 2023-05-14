@@ -75,6 +75,8 @@ const COPY_LIST = [
     ["node_modules/@matrix-org/olm/olm_legacy.js", "webapp", { directwatch: 1 }],
     ["./config.json", "webapp", { directwatch: 1 }],
     ["contribute.json", "webapp"],
+    ["src/custom/**", "webapp/custom"],
+    ["src/custom/favicon.ico", "webapp/vector-icons"],
 ];
 
 const parseArgs = require("minimist");

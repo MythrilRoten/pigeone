@@ -93,12 +93,15 @@ export async function loadApp(fragParams: {}): Promise<ReactElement> {
 
     const urlWithoutQuery = window.location.protocol + "//" + window.location.host + window.location.pathname;
     logger.log("Vector starting at " + urlWithoutQuery);
+    
 
     (platform as VectorBasePlatform).startUpdater();
 
     // Don't bother loading the app until the config is verified
     const config = await verifyServerConfig();
     const snakedConfig = new SnakedObject<IConfigOptions>(config);
+
+    logger.log("Current config", config);
 
     // Before we continue, let's see if we're supposed to do an SSO redirect
     const [userId] = await Lifecycle.getStoredSessionOwner();
@@ -194,12 +197,14 @@ async function verifyServerConfig(): Promise<IConfigOptions> {
                 };
             }
         }
-
-        if (process.env.homeserver) { 
+  
+        if (process.env.HOMESERVER) {
+        logger.log("Using custom homeserver");
           wkConfig = {
             "m.homeserver": {
               base_url: process.env.HOMESERVER
             },
+            
           };
         }
 
