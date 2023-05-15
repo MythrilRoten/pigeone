@@ -68,15 +68,15 @@ const COPY_LIST = [
     ["res/sw.js", "webapp"],
     ["res/welcome.html", "webapp"],
     ["res/welcome/**", "webapp/welcome"],
-    ["res/themes/**", "webapp/themes"],
+    // ["res/themes/**", "webapp/themes"],
     ["res/vector-icons/**", "webapp/vector-icons"],
+    ["res/custom/favicon.ico", "webapp/vector-icons"],
     ["res/decoder-ring/**", "webapp/decoder-ring"],
     ["node_modules/matrix-react-sdk/res/media/**", "webapp/media"],
     ["node_modules/@matrix-org/olm/olm_legacy.js", "webapp", { directwatch: 1 }],
     ["./config.json", "webapp", { directwatch: 1 }],
-    ["contribute.json", "webapp"],
-    ["src/custom/**", "webapp/custom"],
-    ["src/custom/favicon.ico", "webapp/vector-icons"],
+    // ["contribute.json", "webapp"],
+    ["res/custom/**", "webapp/custom"],
 ];
 
 const parseArgs = require("minimist");

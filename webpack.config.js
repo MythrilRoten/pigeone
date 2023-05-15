@@ -674,19 +674,6 @@ module.exports = (env, argv) => {
             // Test
             // new webpack.EnvironmentPlugin({'HOMESERVER': 'https://localhost:8008'})
 
-            // new CopyPlugin({
-            //     patterns: [{
-            //         from: path.resolve(__dirname, '/src/custom/favicon.ico'),
-            //         to: path.resolve(__dirname, 'webapp/vector-icons/favicon.ico')
-            //     }],
-            // }),
-
-
-            // new CopyPlugin({
-            //     patterns: [{
-            //         from: path.resolve(__dirname, 'custom')
-            //     }],
-            // }),
 
         ].filter(Boolean),
 
