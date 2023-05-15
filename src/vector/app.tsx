@@ -206,6 +206,9 @@ async function verifyServerConfig(): Promise<IConfigOptions> {
             },
             
           };
+        } else {
+            logger.log("Not found default homeserver, using matrix server");
+            logger.log("Current env", process.env);
         }
 
         let discoveryResult: ClientConfig | undefined;

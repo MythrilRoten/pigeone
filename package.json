@@ -1,11 +1,11 @@
 {
-    "name": "element-web",
-    "version": "1.11.31",
+    "name": "pigeone",
+    "version": "1.0",
     "description": "A feature-rich client for Matrix.org",
     "author": "New Vector Ltd.",
     "repository": {
         "type": "git",
-        "url": "https://github.com/vector-im/element-web"
+        "url": "https://github.com/MythrilRoten/pigeone"
     },
     "license": "Apache-2.0",
     "files": [
