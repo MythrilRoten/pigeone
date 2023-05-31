@@ -1,18 +1,15 @@
 {
     "default_server_config": {
         "m.homeserver": {
-            "base_url": "https://matrix-client.matrix.org",
-            "default_server_name": "matrix.org"
-        },
-        "m.identity_server": {
-            "base_url": "https://vector.im"
+            "base_url": "https://mtrx.burworld.ru",
+            "default_server_name": "mtrx.burworld.ru"
         }
     },
     "disable_custom_urls": false,
     "disable_guests": false,
     "disable_login_language_selector": false,
     "disable_3pid_login": false,
-    "brand": " ",
+    "brand": "Pigeone",
     "integrations_ui_url": "https://scalar.vector.im/",
     "integrations_rest_url": "https://scalar.vector.im/api",
     "integrations_widgets_urls": [
@@ -27,7 +24,7 @@
     "default_country_code": "RU",
     "show_labs_settings": false,
     "features": {
-
+        
         "feature_element_call_video_rooms": false,
         "feature_group_calls": false,
         "feature_location_share_live": false,
@@ -57,24 +54,29 @@
         "MessageComposerInput.showPollsButton": false,
         "MessageComposerInput.insertTrailingColon": false,
 
-        "UIFeature.RoomHistorySettings": false,
-        "UIFeature.AdvancedEncryption": false,
-        "UIFeature.URLPreviews": false,
-        "UIFeature.Widgets": false,
-        "UIFeature.LocationSharing": false,
-        "UIFeature.Voip": false,
-        "UIFeature.Feedback": false,
-        "UIFeature.Registration": false,
-        "UIFeature.PasswordReset": false,
-        "UIFeature.Deactivate": false,
-        "UIFeature.ShareQRCode": false,
-        "UIFeature.ShareSocial": false,
-        "UIFeature.IdentityServer": false,
-        "UIFeature.ThirdPartyID": false,
-        "UIFeature.AdvancedSettings": false,
-        "UIFeature.TimelineEnableRelativeDates": false,
+        
+        "useOnlyCurrentProfiles": false,
+        "UIFeature.advancedEncryption": false,
+        "UIFeature.urlPreviews": false,
+        "UIFeature.widgets": false,
+        "UIFeature.locationSharing": false,
+        "UIFeature.voip": false,
+        "UIFeature.feedback": false,
+        "UIFeature.registration": false,
+        "UIFeature.passwordReset": false,
+        "UIFeature.deactivate": false,
+        "UIFeature.shareQrCode": false,
+        "UIFeature.shareSocial": false,
+        "UIFeature.identityServer": false,
+        "UIFeature.thirdPartyId": false,
+        "UIFeature.advancedSettings": false,
+        "UIFeature.roomHistorySettings": false,
+        "UIFeature.timelineEnableRelativeDates": false,
         "UIFeature.BulkUnverifiedSessionsReminder": false,
+        
 
+
+        "developerMode": true,
         "sendTypingNotifications": false,
         "Pill.shouldShowPillAvatar": false,
         "TextualBody.enableBigEmoji": false,
@@ -100,10 +102,10 @@
                 },
                 "colors": {
                     "accent-color": "#3596fc",
-                    "primary-color": "#368bd6",
+                    "primary-color": "#6d9dc5",
                     "warning-color": "#ff4b55",
-                    "sidebar-color": "#27303a",
-                    "roomlist-background-color": "#f3f8fd",
+                    "sidebar-color": "#6d9dc5",
+                    "roomlist-background-color": "#aeecef",
                     "roomlist-text-color": "#2e2f32",
                     "roomlist-text-secondary-color": "#61708b",
                     "roomlist-highlights-color": "#ffffff",
@@ -112,7 +114,7 @@
                     "timeline-text-color": "#2e2f32",
                     "timeline-text-secondary-color": "#61708b",
                     "timeline-highlights-color": "#f3f8fd",
-                    "username-colors": ["#ff0000"], 
+                    "username-colors": ["#53599a"], 
                     "avatar-background-colors": ["#cc0000"]
                 }
             }
@@ -120,11 +122,10 @@
         "breadcrumbs": true
     },
     "branding": {
-        "welcomeBackgroundUrl": "./custom/mountain.jpg",
+        "welcomeBackgroundUrl": "./custom/background.jpg",
         "authHeaderLogoUrl": "./custom/pigeon-200.svg",
         "auth_footer_links": [
-            { "text": "FAQ", "url": "https://example.org/faq" },
-            { "text": "Donate", "url": "https://example.org/donate" }
+            { "text": "", "url": "" }
         ]
     },
 
